@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,16 +104,23 @@ line-height:1.7;
 
 .skills{
 display:flex;
-flex-wrap:wrap;
-gap:10px;
+flex-direction:column;
+gap:12px;
 }
 
 .skill{
 background:#e2e8f0;
-padding:10px 15px;
+padding:12px 15px;
 border-radius:10px;
 font-size:14px;
 font-weight:600;
+width:100%;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#dbeafe;
+transform:translateX(5px);
 }
 
 footer{
@@ -154,8 +162,6 @@ height:130px;
 
 <div class="container">
 
-<!-- LEFT SIDE -->
-
 <div>
 
 <div class="card">
@@ -188,8 +194,6 @@ height:130px;
 
 </div>
 
-<!-- RIGHT SIDE -->
-
 <div>
 
 <div class="card">
@@ -197,7 +201,7 @@ height:130px;
 <h2>About Me</h2>
 
 <p>
-I am a BS Data Science student with a strong interest in Artificial Intelligence, Machine Learning, Data Analytics, and Business Intelligence. I enjoy transforming raw data into meaningful insights and building data-driven solutions that solve real-world problems. My academic journey has allowed me to work on data warehousing, dashboard development, predictive analytics, and machine learning projects, helping me strengthen both my technical and analytical skills.
+I am a BS Data Science student with a strong interest in Artificial Intelligence, Machine Learning, Data Analytics, and Business Intelligence. I enjoy transforming raw data into meaningful insights and building data-driven solutions that solve real-world problems. My academic experience includes Data Warehousing, Business Intelligence, Dashboard Development, Predictive Analytics, and Machine Learning projects that strengthen both my analytical and technical capabilities.
 </p>
 
 </div>
@@ -211,7 +215,7 @@ I am a BS Data Science student with a strong interest in Artificial Intelligence
 <h3>Heart Disease Prediction Analysis Dashboard</h3>
 
 <p>
-Developed an interactive Tableau dashboard as part of a Data Warehouse and Business Intelligence project. The dashboard analyzes heart disease data, visualizes patient trends, risk factors, and health indicators, enabling data-driven insights for healthcare decision-making.
+Developed an interactive Tableau dashboard as part of a Data Warehouse and Business Intelligence project. The dashboard analyzes heart disease data, visualizes patient trends, risk factors, and health indicators, enabling data-driven healthcare insights and decision-making.
 </p>
 
 </div>
@@ -221,7 +225,7 @@ Developed an interactive Tableau dashboard as part of a Data Warehouse and Busin
 <h3>RNA Sequence Analysis Using Machine Learning</h3>
 
 <p>
-Currently working on a machine learning-based research project focused on RNA sequence analysis. The project involves data preprocessing, feature extraction, pattern identification, and predictive modeling to analyze biological sequence data and uncover meaningful insights for bioinformatics applications.
+Currently working on a machine learning-based bioinformatics project focused on RNA sequence analysis. The project involves sequence preprocessing, feature extraction, pattern discovery, and predictive modeling techniques to identify meaningful biological insights and improve analytical accuracy.
 </p>
 
 </div>
@@ -234,16 +238,16 @@ Currently working on a machine learning-based research project focused on RNA se
 
 <div class="skills">
 
-<span class="skill">Python</span>
-<span class="skill">SQL</span>
-<span class="skill">Tableau</span>
-<span class="skill">Power BI</span>
-<span class="skill">Machine Learning</span>
-<span class="skill">Data Warehousing</span>
-<span class="skill">Business Intelligence</span>
-<span class="skill">Pandas</span>
-<span class="skill">NumPy</span>
-<span class="skill">Data Analytics</span>
+<div class="skill"> Python</div>
+<div class="skill"> SQL</div>
+<div class="skill"> Tableau</div>
+<div class="skill"> Power BI</div>
+<div class="skill"> Machine Learning</div>
+<div class="skill"> Data Warehousing</div>
+<div class="skill"> Business Intelligence</div>
+<div class="skill"> Pandas</div>
+<div class="skill"> NumPy</div>
+<div class="skill"> Data Analytics</div>
 
 </div>
 
@@ -259,3 +263,4 @@ Currently working on a machine learning-based research project focused on RNA se
 
 </body>
 </html>
+```
