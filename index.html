@@ -26,10 +26,16 @@ color:#1e293b;
 
 header{
 text-align:center;
-padding:70px 20px;
-background:linear-gradient(135deg,#2563eb,#1d4ed8);
-color:white;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
+padding:80px 20px;
+background-color:#DBE7F5;
+
+/* Grid Pattern */
+background-image:
+linear-gradient(rgba(15,23,42,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(15,23,42,0.05) 1px, transparent 1px);
+
+background-size:40px 40px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
 .profile{
@@ -37,22 +43,27 @@ width:170px;
 height:170px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid white;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+background:white;
+padding:5px;
+border:3px solid #0f172a;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 h1{
 font-size:55px;
 margin-top:20px;
 letter-spacing:2px;
+color:#0f172a;
 }
 
 .subtitle{
 font-size:18px;
 margin-top:10px;
+color:#334155;
+font-weight:500;
 }
 
-/* LAYOUT */
+/* MAIN CONTAINER */
 
 .container{
 max-width:1200px;
@@ -76,16 +87,17 @@ transition:0.3s;
 
 .card:hover{
 transform:translateY(-4px);
+box-shadow:0 12px 25px rgba(0,0,0,0.12);
 }
 
 .card h2{
 margin-bottom:20px;
-color:#0f172a;
-border-bottom:2px solid #2563eb;
 padding-bottom:10px;
+border-bottom:2px solid #2563eb;
+color:#0f172a;
 }
 
-/* LINKS */
+/* CONNECT LINKS */
 
 .link{
 display:block;
@@ -114,7 +126,8 @@ border-bottom:1px solid #e2e8f0;
 }
 
 .project:last-child{
-border:none;
+border-bottom:none;
+margin-bottom:0;
 }
 
 .project h3{
@@ -123,7 +136,33 @@ color:#0f172a;
 }
 
 .project p{
+line-height:1.8;
+color:#475569;
+}
+
+/* COURSES */
+
+.course{
+background:#f8fafc;
+padding:18px;
+border-radius:12px;
+margin-bottom:15px;
+border-left:6px solid #2563eb;
+border:1px solid #e2e8f0;
+}
+
+.course:last-child{
+margin-bottom:0;
+}
+
+.course h3{
+margin-bottom:8px;
+color:#0f172a;
+}
+
+.course p{
 line-height:1.7;
+color:#475569;
 }
 
 /* SKILLS */
@@ -149,36 +188,17 @@ background:#dbeafe;
 transform:translateX(5px);
 }
 
-/* COURSES */
-
-.course{
-background:#f8fafc;
-padding:18px;
-border-radius:12px;
-margin-bottom:15px;
-border-left:6px solid #2563eb;
-}
-
-.course h3{
-margin-bottom:8px;
-color:#0f172a;
-}
-
-.course p{
-line-height:1.6;
-}
-
 /* FOOTER */
 
 footer{
 text-align:center;
-padding:40px;
+padding:35px;
 margin-top:30px;
 background:#1e293b;
 color:white;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 
 @media(max-width:768px){
 
@@ -195,6 +215,10 @@ width:130px;
 height:130px;
 }
 
+.subtitle{
+font-size:15px;
+}
+
 }
 
 </style>
@@ -209,15 +233,11 @@ height:130px;
 
 <h1>NIMRA ASHRAF</h1>
 
-<p class="subtitle">
-Data Science Student | AI Enthusiast | Machine Learning & Business Intelligence
-</p>
-
 </header>
 
 <div class="container">
 
-<!-- LEFT SIDE -->
+<!-- LEFT COLUMN -->
 
 <div>
 
@@ -251,7 +271,7 @@ Data Science Student | AI Enthusiast | Machine Learning & Business Intelligence
 
 </div>
 
-<!-- RIGHT SIDE -->
+<!-- RIGHT COLUMN -->
 
 <div>
 
@@ -259,7 +279,7 @@ Data Science Student | AI Enthusiast | Machine Learning & Business Intelligence
 
 <h2>About Me</h2>
 
-<p>
+<p style="line-height:1.8;color:#475569;">
 I am a BS Data Science student with a strong interest in Artificial Intelligence, Machine Learning, Data Analytics, and Business Intelligence. I enjoy transforming raw data into meaningful insights and building data-driven solutions that solve real-world problems. My academic experience includes Data Warehousing, Business Intelligence, Dashboard Development, Predictive Analytics, and Machine Learning projects that strengthen both my analytical and technical capabilities.
 </p>
 
@@ -291,8 +311,6 @@ Currently working on a machine learning-based bioinformatics project focused on 
 
 </div>
 
-<!-- NEW COURSES SECTION -->
-
 <div class="card" style="margin-top:20px;">
 
 <h2>Courses & Certifications</h2>
@@ -302,7 +320,7 @@ Currently working on a machine learning-based bioinformatics project focused on 
 <h3>🤖 NAVTTC Government AI Course</h3>
 
 <p>
-Completed Artificial Intelligence training under NAVTTC. Learned Machine Learning fundamentals, Data Preprocessing, Model Building, AI Concepts, Data Visualization, and practical implementation of AI solutions.
+Completed Artificial Intelligence training under NAVTTC. Learned Machine Learning, Data Preprocessing, Data Visualization, AI Concepts, Model Building and practical AI applications.
 </p>
 
 </div>
@@ -312,7 +330,7 @@ Completed Artificial Intelligence training under NAVTTC. Learned Machine Learnin
 <h3>📊 Online Data Science Course</h3>
 
 <p>
-Studied Data Science concepts including Data Analysis, Statistics, Data Cleaning, Exploratory Data Analysis (EDA), Predictive Analytics, Business Intelligence, and Dashboard Development.
+Learned Data Analysis, Statistics, Data Cleaning, Exploratory Data Analysis (EDA), Predictive Analytics, Dashboard Development and Business Intelligence concepts.
 </p>
 
 </div>
@@ -322,7 +340,7 @@ Studied Data Science concepts including Data Analysis, Statistics, Data Cleaning
 <h3>🐍 Python Programming Course</h3>
 
 <p>
-Learned Python fundamentals including variables, loops, functions, file handling, object-oriented programming, NumPy, Pandas, and Python applications in Data Science and Machine Learning.
+Studied Python fundamentals including variables, loops, functions, file handling, object-oriented programming, NumPy, Pandas and Data Science applications.
 </p>
 
 </div>
